@@ -1,0 +1,21 @@
+#resultado{
+    border: 1px solid black;
+    height: 120px;
+    background: rgba(108, 108, 108, 0.1);
+}
+
+#botones_contenedor{
+    height: 665px;
+    background: rgba(108, 108, 108, 0.1);
+}
+
+#botones_contenedor input{
+    margin: 5px;
+    height: 100px;
+    background: #fff;
+    border: 1px solid rgba(176, 208, 216, 0.5);
+}
+
+#botones_contenedor #igual{
+    background: rgba(180, 220, 240, 0.9);
+}
