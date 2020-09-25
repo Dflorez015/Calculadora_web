@@ -1,11 +1,26 @@
+input{
+    font-size: 22px;
+}
+
+.calcu{    
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+td:hover {
+    background-color: #ddd;
+    
+    cursor: pointer;
+}
+
+#display{
+    font-size: 50px;
+}
+
 #resultado{
     border: 1px solid black;
     height: 120px;
-    background: rgba(108, 108, 108, 0.1);
-}
-
-#botones_contenedor{
-    height: 665px;
     background: rgba(108, 108, 108, 0.1);
 }
 

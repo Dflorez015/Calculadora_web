@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Claculadora</title>
 </head>
+
 <body>
-        <div id="resultado" class="container-md">
-            <label for="resultado"></label>
-        </div>
-        <div id="botones_contenedor" class="container-sm">
-            <div class="row">
-                <input type="button" class="col" value="%"></input>
-                <input type="button" class="col" value="CE"></input>
-                <input type="button" class="col" value="C"></input>
-                <input type="button" class="col" value="DEL"></input>
-                <div class="w-100"></div>
-                <input type="button"  class="col"value="1/x"></input>
-                <input type="button"  class="col"value="x²"></input>
-                <input type="button"  class="col"value="√x"></input>
-                <input type="button"  class="col"value="÷"></input>
-                <div class="w-100"></div>
-                <input type="button" class="col" value="7"></input>
-                <input type="button" class="col" value="8"></input>
-                <input type="button" class="col" value="9"></input>
-                <input type="button" class="col" value="X"></input>
-                <div class="w-100"></div>
-                <input type="button"  class="col" value="4"></input>
-                <input type="button"  class="col" value="5"></input>
-                <input type="button"  class="col" value="6"></input>
-                <input type="button"  class="col" value="-"></input>
-                <div class="w-100"></div>
-                <input type="button" class="col" value="1"></input>
-                <input type="button" class="col" value="2"></input>
-                <input type="button" class="col" value="3"></input>
-                <input type="button" class="col" value="+"></input>
-                <div class="w-100"></div>
-                <input type="button"  class="col" value="±"></input>
-                <input type="button"  class="col" value="0"></input>
-                <input type="button"  class="col" value=","></input>
-                <input type="button" id="igual" class="col" value="="></input>
+    <div class="container">
+        <div class="calcu">
+            <div class="text-center" style="width: 500px;">
+
+                <div id="resultado" class="container-md text-right pt-4">
+                    <label for="resultado" id="display"></label>
+                </div>
+
+                <table class="table shadow-lg" id="table">
+                    <tr>
+                        <td>%</td>
+                        <td>CE</td>
+                        <td>C</td>
+                        <td>DEL</td>
+                    </tr>
+                    <tr>
+                        <td>1/x</td>
+                        <td>x²</td>
+                        <td>√x</td>
+                        <td>÷</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>+</td>
+                    </tr>
+                    <tr>
+                        <td>±</td>
+                        <td>0</td>
+                        <td>.</td>
+                        <td>=</td>
+                    </tr>
+                </table>
+
             </div>
         </div>
+    </div>
+    <script src="main.js"></script>
 </body>
+
 </html>
