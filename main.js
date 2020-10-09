@@ -27,17 +27,6 @@ const number = (x, y) => {
     }
 }
 
-// Limpia el historial
-const clearApp = () => {
-    if (memory.length != 0) {
-        $("#historial tr").remove()
-        label.innerHTML = "";
-        memory = [];
-        lastOption = "";
-        option = "";
-    }
-}
-
 // Realiza las primeras dos filas de operaciones. Excepto la división
 const conplexOperation = (opcn) => {
     let cont = memory.length
@@ -163,7 +152,18 @@ const equal = (x, y) => {
     }
 }
 
+// Limpia todo
+const clearApp = () => {
+    if (memory.length != 0) {
+        $("#historial tr").remove()
+        label.innerHTML = "";
+        memory = [];
+        lastOption = "";
+        option = "";
+    }
+}
 
+// Todas las funciones
 const allOperaciones = () => {
     number(rIndex, cIndex);
     operation(rIndex, cIndex);
