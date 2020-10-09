@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel=" stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Claculadora</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="calcu">
-            <div class="text-center" style="width: 500px;">
+        <div class="centrar row">
+            <div class="text-center d-inline" style="width: 25vw; min-width: 360px;">
 
-                <div id="resultado" class="container-md text-right pt-4">
+                <div id="resultado" class="container-md text-right pt-4" style="overflow-x: auto; overflow-y: hidden;">
                     <label for="resultado" id="display"></label>
                 </div>
 
@@ -22,7 +22,7 @@
                     <tr>
                         <td>%</td>
                         <td>CE</td>
-                        <td>C</td>
+                        <td style="background: rgb(250, 108, 108);">ALLC</td>
                         <td>DEL</td>
                     </tr>
                     <tr>
@@ -53,13 +53,26 @@
                         <td>±</td>
                         <td>0</td>
                         <td>.</td>
-                        <td>=</td>
+                        <td style="background: orange;">=</td>
                     </tr>
                 </table>
 
             </div>
+
+            <div class="text-center">
+                <h4 style="background: darkgrey;">Historial</h4>
+                <table class="table shadow-lg text-right" id="historial">
+                    <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="main.js"></script>
 </body>
 
