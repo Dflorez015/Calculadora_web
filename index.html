@@ -6,23 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel=" stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Claculadora</title>
+    <title>Calculadora</title>
 </head>
 
-<body>
+<body style="background:  lightblue;">
     <div class="container">
         <div class="centrar row">
             <div class="text-center d-inline" style="width: 25vw; min-width: 360px;">
-
-                <div id="resultado" class="container-md text-right pt-4" style="overflow-x: auto; overflow-y: hidden;">
+                <div id="resultado" class="container-md text-right pt-4 bg-dark" style="overflow-x: auto; overflow-y: hidden; color: white;">
                     <label for="resultado" id="display"></label>
                 </div>
-
-                <table class="table shadow-lg" id="table">
+                <table class="table shadow bg-dark" id="table" style="color: white;">
                     <tr>
                         <td>%</td>
                         <td>CE</td>
-                        <td style="background: rgb(250, 108, 108);">ALLC</td>
+                        <td style="background: rgb(250, 108, 108);">AC</td>
                         <td>DEL</td>
                     </tr>
                     <tr>
@@ -56,18 +54,17 @@
                         <td style="background: orange;">=</td>
                     </tr>
                 </table>
-
             </div>
 
             <div class="text-center">
-                <h4 style="background: darkgrey;">Historial</h4>
-                <table class="table shadow-lg text-right" id="historial">
-                    <tbody>
-                        <tr>
-                            <td></td>
-                        </tr>
-                    </tbody>
+                <div class="bg-dark" style="color: white;">
+                    Creado por Duván Florez <br> y Jesús Movilla
+                </div>
+                <h4>Historial</h4>
+                <table class="table shadow bg-dark" id="historial" style="color: white;">
+                    <tbody></tbody>
                 </table>
+                <input id="limpiar" type="button" class="bg-dark" value="Limpiar Historial" onclick="clearhistorial()">
             </div>
         </div>
     </div>

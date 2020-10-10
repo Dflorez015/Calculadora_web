@@ -3,8 +3,14 @@ input{
 }
 
 td:hover {
-    background-color: #ddd;    
+    background-color: gray;
     cursor: pointer;
+}
+
+#limpiar{
+    font-size: 15px; 
+    width: 200px; 
+    color: white;
 }
 
 .centrar{
@@ -12,22 +18,26 @@ td:hover {
     margin-top: 10vh;
 }
 
+h4{
+    background: white; 
+    color: black;
+}
+
 #table  td{
-    border: 1px solid rgba(108, 108, 108, 0.1)
+    border: 1px solid rgba(108, 108, 108, 0.25);
 }
 
 #historial{
-    min-width: 90px;
-    width: auto;
+    height: 287px;
+    width: 200px;
 }
 
 #historial > tbody{
     display: block;
-    width: auto;
-    max-width: 250px;
-    height: 150px;
+    width: 200px;
+    height: 287px;
     overflow-y: auto;
-    overflow-x: auto;
+    border-left: 1px solid white;
 }
 
 #display{
@@ -35,7 +45,8 @@ td:hover {
 }
 
 #resultado{
-    border: 1px solid black;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
     height: 120px;
     background: rgba(108, 108, 108, 0.1);
 }

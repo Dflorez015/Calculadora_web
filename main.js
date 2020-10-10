@@ -5,7 +5,7 @@ var memory = [];
 var option = "";
 var lastOption = "";
 var cal = [
-    ["%", "CE", "ALLC", "DEL"],
+    ["%", "CE", "AC", "DEL"],
     ["1/x", "x²", "√x", "÷"],
     ["7", "8", "9", "X"],
     ["4", "5", "6", "-"],
@@ -52,7 +52,7 @@ const conplexOperation = (opcn) => {
             label.innerHTML = "";
             break;
 
-        case "ALLC":
+        case "AC":
             clearApp();
             break;
 
@@ -118,7 +118,7 @@ const basicOperation = (optn, numero1, numero2) => {
 // Historial de la aplicación
 const record = (optn, n1, n2) => {
     // Inserta una fila en la tabla
-    var newRow = rec.insertRow(rec.rows.length);
+    var newRow = rec.insertRow(rec.rows);
 
     // Inserta una celda en la fila, en el índice 0
     var newCell = newRow.insertCell(0);
@@ -155,12 +155,16 @@ const equal = (x, y) => {
 // Limpia todo
 const clearApp = () => {
     if (memory.length != 0) {
-        $("#historial tr").remove()
         label.innerHTML = "";
         memory = [];
         lastOption = "";
         option = "";
     }
+}
+
+//Limpia el historial
+const clearhistorial = () =>{
+    $("#historial tr").remove()
 }
 
 // Todas las funciones
